@@ -1,154 +1,77 @@
-# TitanRep - Fitness Workout Tracker 💪
 
-A modern mobile fitness app built with Expo and React Native. Track your daily workouts, mark exercises as complete, and stay consistent with your training goals.
+Fitness Workout Tracker
 
-## Features
+A modern mobile fitness application built using Expo and React Native. This app helps users manage daily workouts, monitor exercise progress, and maintain consistency in their fitness routine.
 
-- 📅 **Weekly Workout Schedule** - Organize exercises by day (Mon-Sun)
-- ✅ **Exercise Tracking** - Mark exercises as complete/incomplete
-- 📱 **Real-time Status Updates** - Changes sync across all screens
-- 🖼️ **Exercise Details** - View detailed information with images
-- 💬 **Motivational Quotes** - Daily quotes on the home screen
-- 📊 **Continue Training** - See pending exercises on home screen
-- ℹ️ **About Section** - Learn more about the app
+Features
 
-## Tech Stack
+Weekly workout planning (Monday to Sunday)
+Mark exercises as complete or incomplete
+Real-time updates across screens
+Exercise detail view with visuals
+Motivational quotes on the home screen
+Track pending workouts easily
+Basic app information section
 
-- **Framework**: Expo with React Native
-- **Routing**: Expo Router (file-based)
-- **State Management**: Redux Toolkit
-- **Styling**: NativeWind (Tailwind CSS for React Native)
-- **Language**: TypeScript
+Tech Stack
 
-## Get Started
+Framework: Expo (React Native)
+Navigation: Expo Router
+State Management: Redux Toolkit
+Styling: NativeWind (Tailwind for React Native)
+Language: TypeScript
 
-### Prerequisites
-- Node.js & npm installed
+Getting Started
 
-### Installation
+Requirements
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/mirza-zain/fitness-app.git
-   cd fitness-app
-   ```
+Node.js
+npm or yarn
 
-2. Install dependencies
-   ```bash
-   npm install
-   ```
+Installation
 
-3. Start the development server
-   ```bash
-   npm start
-   ```
-
-4. Open on device/simulator:
-   - Press `w` for web
-   - Press `i` for iOS simulator
-   - Press `a` for Android emulator
-   - Scan QR code with Expo Go app
-
-## Project Structure
-
-```
-fitness-app/
-├── app/
-│   ├── (dashboard)/          # Dashboard tab layout
-│   │   ├── _layout.tsx       # Tab navigation + header
-│   │   ├── home.tsx          # Home screen with pending exercises
-│   │   ├── exercise.tsx      # Exercise list/detail router
-│   │   └── about.tsx         # About screen
-│   ├── Components/
-│   │   ├── Days.tsx          # Workout schedule component
-│   │   ├── ExerciseDetail.tsx # Exercise detail view
-│   │   ├── DaysList.tsx      # Static exercise data
-│   │   └── ...
-│   ├── slice/
-│   │   └── ExerciseSlice.tsx # Redux slice for exercises
-│   ├── store/
-│   │   └── ExerciseStore.tsx # Redux store configuration
-│   ├── _layout.tsx           # Root layout
-│   └── index.tsx             # Entry point
-├── assets/                   # Images and fonts
-├── package.json
-├── tailwind.config.js
-└── tsconfig.json
-```
-
-## How to Use
-
-1. **View Schedule**: Select a day to see exercises for that day
-2. **Add Exercise**: Click the `+` button to add new exercises
-3. **Mark Complete**: Tap an exercise to view details and mark as complete
-4. **Track Progress**: Home screen shows pending exercises
-5. **Learn More**: Click the info icon (ℹ️) for the About section
-
-## Key Features
-
-### Redux State Management
-- Centralized exercise state
-- Real-time updates across all screens
-- Persistent data during session
-
-### Navigation
-- Tab-based navigation (Home, Exercise)
-- Modal for adding new exercises
-- Deep linking to exercise details
-
-### Responsive Design
-- Mobile-first approach
-- Adapts to different screen sizes
-- Safe area handling for notches
-
-## Development Build
-
-To create a production build:
-
-```bash
-# Android
-eas build --platform android
-
-# iOS
-eas build --platform ios
-
-# Both
-eas build
-```
-
-## Available Scripts
-
-```bash
-# Start development server
+git clone [https://github.com/YOUR-USERNAME/fitness-app.git](https://github.com/YOUR-USERNAME/fitness-app.git)
+cd fitness-app
+npm install
 npm start
 
-# Build for production (EAS)
-eas build
+Run the App
 
-# Preview build
-eas build --preview
-```
+After starting the development server:
 
-## Download APK
+Press w to run in browser
+Press a for Android emulator
+Press i for iOS simulator
+Or scan the QR code using Expo Go
 
-To grab the latest Android APK, check the GitHub **Releases** page for this repo. Each release contains the built APK you can install on your device.
+Project Structure
 
-## Contributing
+fitness-app/
+app/
+(dashboard)/
+Components/
+slice/
+store/
+index.tsx
+assets/
+package.json
 
-Feel free to fork this project and submit pull requests for improvements!
+Usage
 
-## License
+Select a day to view exercises
+Add new exercises
+Mark exercises as complete
+Track remaining workouts from home screen
 
-MIT License - feel free to use this project as a reference or starting point.
+Build
 
-## Author
+Android build command: eas build --platform android
+iOS build command: eas build --platform ios
 
-**Mirza Zain** - [GitHub](https://github.com/mirza-zain)
+Contributing
 
-## Resources
+Contributions are welcome. You can fork the project and submit improvements.
 
-- [Expo Documentation](https://docs.expo.dev/)
-- [React Native Docs](https://reactnative.dev/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Expo Router](https://docs.expo.dev/router/introduction/)
-- [NativeWind](https://www.nativewind.dev/)
+License
+
+MIT License
